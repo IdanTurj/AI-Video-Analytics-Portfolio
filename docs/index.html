@@ -59,8 +59,8 @@
     .frame-badge{position:absolute;left:13px;top:12px;z-index:3;background:#103645df;border:1px solid #3a9c9b;color:#a7ffeb;border-radius:6px;font-size:9px;font-weight:850;padding:5px 7px}
     .camera .status{color:#8fc9e0}
     .gallery-note{font-size:11px;color:#a9d6d7;margin:11px 0 0}
-    @media(max-width:660px){.feature-photo{height:165px}}
-      .hero-panel{transform:none;overflow:hidden}.mock-view{min-height:265px}.mock-view:before{border-color:#5d9a9b30}.feature-photo{height:165px}.feature-photo img{object-position:center 48%}.camera-frame:before{background:linear-gradient(0deg,#071524c9 0%,transparent 35%)}.camera-frame .frame-caption{font-size:9px}.camera-frame:after{border-color:#81d3c633}.feature .symbol{margin-top:1px}
+    @media(max-width:660px){.feature-photo{height:190px}}
+      .hero-panel{transform:none;overflow:hidden}.mock-view{min-height:290px}.mock-view:before{border-color:#5d9a9b30}.feature-photo{height:190px}.feature-photo img{object-position:center 48%}.camera-frame:before{background:linear-gradient(0deg,#071524c9 0%,transparent 35%)}.camera-frame .frame-caption{font-size:9px}.camera-frame:after{border-color:#81d3c633}.feature .symbol{margin-top:1px}
   </style>
 </head>
 <body>
@@ -85,9 +85,9 @@
         <div class="hero-panel" role="img" aria-label="Stylized non-functional video analytics product preview with no video feed">
           <header><strong>Site monitoring overview</strong><span class="dots"><i></i><i></i><i></i></span></header>
           <div class="visual-grid">
-            <div class="mock-view"><img class="scene-photo" alt="Original illustration of parked vehicles; not a camera feed" src="assets/people-detection-parking.svg" loading="eager" referrerpolicy="no-referrer"><span class="floating-label">PERSON DETECTION · UI CONCEPT</span>
+            <div class="mock-view"><img class="scene-photo" alt="Original illustration of parked vehicles; not a camera feed" src="assets/person-detection-parking.avif" loading="eager" referrerpolicy="no-referrer"><span class="floating-label">PERSON DETECTION · UI CONCEPT</span>
               
-              <span class="feed-text">Synthetic people & overlays · No live inference</span>
+              <span class="feed-text">AI-generated people & overlays · No live inference</span>
             </div>
             <div class="stats-stack"><div class="tiny-card"><small>People detection</small><strong>AI</strong><span class="sample">Visual explanation only</span></div><div class="tiny-card"><small>Monitoring rules</small><strong>24/7</strong><span class="sample">Illustrative workflow</span></div></div>
           </div>
@@ -98,10 +98,10 @@
         <div class="eyebrow">Product capabilities</div><h2 class="section-heading">Built around events, sites, and access.</h2>
         <p class="section-intro">This safe public demonstration communicates the workflows of a privately developed AI video analytics application. Its production implementation is not published here.</p>
         <div class="features">
-          <article class="feature"><div class="feature-photo"><img src="assets/people-detection-parking.svg" alt="Synthetic illustration of people detected near a commercial parking facility" loading="lazy"></div><span class="symbol">◎</span><b>Event-driven monitoring</b><p>Security rules such as tripwires, restricted areas, and scheduled monitoring help surface incidents for review.</p></article>
-          <article class="feature"><div class="feature-photo"><img src="assets/people-detection-lobby.svg" alt="Synthetic person-detection illustration in an office lobby" loading="lazy"></div><span class="symbol">⌘</span><b>Customer-centered workspace</b><p>Organized access to camera lists, incidents, site context, permissions, and account settings.</p></article>
-          <article class="feature"><div class="feature-photo"><img src="assets/people-detection-warehouse.svg" alt="Synthetic person-detection illustration in a logistics facility" loading="lazy"></div><span class="symbol">▣</span><b>Evidence and review</b><p>Incident metadata and associated evidence help users understand alerts without scanning continuous footage.</p></article>
-        </div><p class="gallery-note">All illustrated detections, bounding boxes, labels and values are synthetic examples, not actual model predictions or customer footage.</p>
+          <article class="feature"><div class="feature-photo"><img src="assets/person-detection-parking.avif" alt="Synthetic illustration of people detected near a commercial parking facility" loading="lazy"></div><span class="symbol">◎</span><b>Event-driven monitoring</b><p>Security rules such as tripwires, restricted areas, and scheduled monitoring help surface incidents for review.</p></article>
+          <article class="feature"><div class="feature-photo"><img src="assets/person-detection-lobby.avif" alt="Synthetic person-detection illustration in an office lobby" loading="lazy"></div><span class="symbol">⌘</span><b>Customer-centered workspace</b><p>Organized access to camera lists, incidents, site context, permissions, and account settings.</p></article>
+          <article class="feature"><div class="feature-photo"><img src="assets/person-detection-warehouse.avif" alt="Synthetic person-detection illustration in a logistics facility" loading="lazy"></div><span class="symbol">▣</span><b>Evidence and review</b><p>Incident metadata and associated evidence help users understand alerts without scanning continuous footage.</p></article>
+        </div><p class="gallery-note">All three scenes were AI-generated for this portfolio. Bounding boxes, confidence labels, counts, and tracking paths are fictional illustrations—not results or measured performance of a real AI system.</p>
       </div>
       <div class="section">
         <div class="eyebrow">User journey</div><h2 class="section-heading">From setup to response.</h2>
@@ -138,16 +138,16 @@
             <div class="metric"><span>Selected site</span><b id="metricSite">A</b><small>Synthetic location</small></div>
           </div>
           <div id="panel-overview">
-            <div class="subhead"><h3>Camera overview</h3><small>Original illustrative images · No video feeds</small></div><div class="camera-grid" id="overviewCameras"></div>
+            <div class="subhead"><h3>Camera overview</h3><small>AI-generated scenes · No video feeds</small></div><div class="camera-grid" id="overviewCameras"></div>
             <div class="subhead"><h3>Recent incidents</h3><small>Illustrative alerts</small></div><div class="events" id="overviewEvents"></div>
           </div>
           <div id="panel-cameras" class="hidden">
-            <div class="subhead"><h3>Site cameras</h3><small>Illustrations · UI preview only</small></div><div class="camera-grid" id="allCameras"></div>
-            <div class="note-card">Visuals shown in these camera tiles are synthetic illustrations, not real security camera footage. This portfolio site has no video player, live endpoint, or stored footage.</div>
+            <div class="subhead"><h3>Site cameras</h3><small>AI-generated examples · Not live</small></div><div class="camera-grid" id="allCameras"></div>
+            <div class="note-card">Visuals shown in these camera tiles are AI-generated scenes, not real security camera footage. This portfolio site has no video player, live endpoint, or stored footage.</div>
           </div>
           <div id="panel-incidents" class="hidden">
             <div class="subhead"><h3>Incident center</h3><small>Static examples of an event history</small></div><div class="events" id="allEvents"></div>
-            <div class="note-card">The full application supports event handling and saved evidence. No real snapshots, clips, identities, or customer information are included in this demo. Images in camera cards are original illustrations, not actual incident evidence.</div>
+            <div class="note-card">The full application supports event handling and saved evidence. No real snapshots, clips, identities, or customer information are included in this demo. Images in camera cards are AI-generated scenes, not actual incident evidence.</div>
           </div>
           <div id="panel-permissions" class="hidden">
             <div class="subhead"><h3>Role-based access</h3><small>Design illustration — not real authentication</small></div>
@@ -186,8 +186,8 @@
       document.querySelectorAll('[data-view]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();showView(b.getAttribute('data-view'));});});
       var sites={alpha:{code:'A',cameras:['Entrance','North Perimeter','Loading Zone','Office Exterior'],events:[['Restricted-area event','Example · 09:42','amber','Review'],['After-hours activity','Example · 08:15','blue','Info'],['Camera health update','Example · Yesterday','', 'Resolved']]},beta:{code:'B',cameras:['Gate','Storage Exterior'],events:[['Tripwire event','Example · 11:20','amber','Review'],['Camera health update','Example · Yesterday','', 'Resolved']]}};
       var cameraIcon='<svg width="51" height="42" viewBox="0 0 51 42" fill="none" aria-hidden="true"><rect x="4" y="7" width="36" height="27" rx="5" stroke="#8cbdca" stroke-width="2"/><path d="M40 15L48 11V29L40 25" stroke="#8cbdca" stroke-width="2"/><path d="M17 19h10M22 14v10" stroke="#8cbdca" stroke-width="1.5"/></svg>';
-      var demoPhotos=["assets/people-detection-parking.svg","assets/people-detection-warehouse.svg","assets/people-detection-lobby.svg"];
-      function cameraHtml(name,index){var photo=demoPhotos[index%demoPhotos.length];return '<div class="camera"><div class="camera-frame"><img src="'+photo+'" alt="Synthetic illustration of people detection for '+name+' card; not camera footage" loading="lazy"><span class="frame-badge">STATIC EXAMPLE</span><span class="frame-caption">No live connection · Illustrative imagery</span></div><div class="camera-meta"><strong>'+name+'</strong><span class="status">Demo camera</span></div></div>';}
+      var demoPhotos=["assets/person-detection-parking.avif","assets/person-detection-warehouse.avif","assets/person-detection-lobby.avif"];
+      function cameraHtml(name,index){var photo=demoPhotos[index%demoPhotos.length];return '<div class="camera"><div class="camera-frame"><img src="'+photo+'" alt="Synthetic illustration of people detection for '+name+' card; not camera footage" loading="lazy"><span class="frame-badge">STATIC EXAMPLE</span><span class="frame-caption">AI-generated scene · No live connection</span></div><div class="camera-meta"><strong>'+name+'</strong><span class="status">Demo camera</span></div></div>';}
       function eventHtml(row){return '<div class="event"><div><b>'+row[0]+'</b><small>'+row[1]+'</small></div><span class="chip '+row[2]+'">'+row[3]+'</span></div>';}
       function refresh(){var d=sites[document.getElementById('siteSelect').value];document.getElementById('metricCameras').textContent=String(d.cameras.length).padStart(2,'0');document.getElementById('metricIncidents').textContent=String(d.events.length).padStart(2,'0');document.getElementById('metricSite').textContent=d.code;document.getElementById('overviewCameras').innerHTML=d.cameras.slice(0,2).map(cameraHtml).join('');document.getElementById('allCameras').innerHTML=d.cameras.map(cameraHtml).join('');document.getElementById('overviewEvents').innerHTML=d.events.slice(0,2).map(eventHtml).join('');document.getElementById('allEvents').innerHTML=d.events.map(eventHtml).join('');}
       document.getElementById('siteSelect').addEventListener('change',refresh);refresh();
