@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Illustrative AI person detection scene: Outdoor parking and commercial entrance"><defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0c2344"/><stop offset=".48" stop-color="#24445d"/><stop offset="1" stop-color="#865e6d"/></linearGradient>
+<linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#21435b"/><stop offset=".58" stop-color="#142d42"/><stop offset="1" stop-color="#0b1b31"/></linearGradient>
+<linearGradient id="pavement" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#496073"/><stop offset=".5" stop-color="#27384b"/><stop offset="1" stop-color="#0f2438"/></linearGradient>
+<linearGradient id="person" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7f9eaf"/><stop offset="1" stop-color="#344d66"/></linearGradient>
+<linearGradient id="darkPanel" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#112b43" stop-opacity=".97"/><stop offset="1" stop-color="#07182c" stop-opacity=".96"/></linearGradient>
+<filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="shadow"><feGaussianBlur stdDeviation="13"/></filter>
+<pattern id="window" width="54" height="64" patternUnits="userSpaceOnUse"><path d="M53 0V64M0 63H54" fill="none" stroke="#7290a6" stroke-opacity=".5" stroke-width="2"/></pattern>
+<pattern id="ground" width="86" height="66" patternUnits="userSpaceOnUse"><path d="M0 65H86M85 0V66" fill="none" stroke="#aec3c9" stroke-opacity=".13"/></pattern>
+</defs><rect width="1200" height="675" fill="url(#sky)"/>
+<path d="M0 30L558 73V462L0 492Z" fill="#142d41"/><path d="M0 130L546 160V451L0 470Z" fill="url(#glass)"/>
+<path d="M0 130L546 160V451L0 470Z" fill="url(#window)"/>
+<g fill="#e5bf82" opacity=".12"><rect x="37" y="177" width="75" height="210"/><rect x="209" y="193" width="75" height="210"/><rect x="367" y="208" width="75" height="210"/></g>
+<path d="M0 108L550 142L550 165L0 134Z" fill="#375369" stroke="#678b9a" stroke-width="3"/>
+<path d="M0 464L560 438L1200 392V675H0Z" fill="url(#pavement)"/>
+<path d="M0 464L560 438L1200 392V675H0Z" fill="url(#ground)"/>
+<path d="M540 426L1200 380V442L544 495Z" fill="#263e4e"/>
+<g stroke="#cbdad8" stroke-opacity=".64" stroke-width="13"><path d="M625 493l160-15M721 529l162-18M829 555l166-20M940 587l175-20"/></g>
+<g transform="translate(725 366) scale(0.47)"><ellipse cy="19" rx="75" ry="19" fill="#041421" opacity=".6"/><path d="M-74 -3L-53 -30L36 -37L68 -14L80 11L-81 11Z" fill="#96a6b3" stroke="#acbdc7" stroke-opacity=".6" stroke-width="2"/><path d="M-48 -28L17 -31L38 -12H-63Z" fill="#1b394f"/><path d="M-3 -31v20" stroke="#b2cdd3" opacity=".5"/><circle cx="-48" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><circle cx="49" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><path d="M-75 -1h12M65 -1h11" stroke="#fee2aa" stroke-width="5"/></g><g transform="translate(788 350) scale(0.47)"><ellipse cy="19" rx="75" ry="19" fill="#041421" opacity=".6"/><path d="M-74 -3L-53 -30L36 -37L68 -14L80 11L-81 11Z" fill="#486c86" stroke="#acbdc7" stroke-opacity=".6" stroke-width="2"/><path d="M-48 -28L17 -31L38 -12H-63Z" fill="#1b394f"/><path d="M-3 -31v20" stroke="#b2cdd3" opacity=".5"/><circle cx="-48" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><circle cx="49" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><path d="M-75 -1h12M65 -1h11" stroke="#fee2aa" stroke-width="5"/></g><g transform="translate(851 334) scale(0.47)"><ellipse cy="19" rx="75" ry="19" fill="#041421" opacity=".6"/><path d="M-74 -3L-53 -30L36 -37L68 -14L80 11L-81 11Z" fill="#8596a4" stroke="#acbdc7" stroke-opacity=".6" stroke-width="2"/><path d="M-48 -28L17 -31L38 -12H-63Z" fill="#1b394f"/><path d="M-3 -31v20" stroke="#b2cdd3" opacity=".5"/><circle cx="-48" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><circle cx="49" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><path d="M-75 -1h12M65 -1h11" stroke="#fee2aa" stroke-width="5"/></g><g transform="translate(914 318) scale(0.47)"><ellipse cy="19" rx="75" ry="19" fill="#041421" opacity=".6"/><path d="M-74 -3L-53 -30L36 -37L68 -14L80 11L-81 11Z" fill="#637d91" stroke="#acbdc7" stroke-opacity=".6" stroke-width="2"/><path d="M-48 -28L17 -31L38 -12H-63Z" fill="#1b394f"/><path d="M-3 -31v20" stroke="#b2cdd3" opacity=".5"/><circle cx="-48" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><circle cx="49" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><path d="M-75 -1h12M65 -1h11" stroke="#fee2aa" stroke-width="5"/></g><g transform="translate(977 302) scale(0.47)"><ellipse cy="19" rx="75" ry="19" fill="#041421" opacity=".6"/><path d="M-74 -3L-53 -30L36 -37L68 -14L80 11L-81 11Z" fill="#96a6b3" stroke="#acbdc7" stroke-opacity=".6" stroke-width="2"/><path d="M-48 -28L17 -31L38 -12H-63Z" fill="#1b394f"/><path d="M-3 -31v20" stroke="#b2cdd3" opacity=".5"/><circle cx="-48" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><circle cx="49" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><path d="M-75 -1h12M65 -1h11" stroke="#fee2aa" stroke-width="5"/></g><g transform="translate(1040 286) scale(0.47)"><ellipse cy="19" rx="75" ry="19" fill="#041421" opacity=".6"/><path d="M-74 -3L-53 -30L36 -37L68 -14L80 11L-81 11Z" fill="#486c86" stroke="#acbdc7" stroke-opacity=".6" stroke-width="2"/><path d="M-48 -28L17 -31L38 -12H-63Z" fill="#1b394f"/><path d="M-3 -31v20" stroke="#b2cdd3" opacity=".5"/><circle cx="-48" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><circle cx="49" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><path d="M-75 -1h12M65 -1h11" stroke="#fee2aa" stroke-width="5"/></g><g transform="translate(1103 270) scale(0.47)"><ellipse cy="19" rx="75" ry="19" fill="#041421" opacity=".6"/><path d="M-74 -3L-53 -30L36 -37L68 -14L80 11L-81 11Z" fill="#8596a4" stroke="#acbdc7" stroke-opacity=".6" stroke-width="2"/><path d="M-48 -28L17 -31L38 -12H-63Z" fill="#1b394f"/><path d="M-3 -31v20" stroke="#b2cdd3" opacity=".5"/><circle cx="-48" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><circle cx="49" cy="10" r="14" fill="#10202d" stroke="#5b7180" stroke-width="5"/><path d="M-75 -1h12M65 -1h11" stroke="#fee2aa" stroke-width="5"/></g>
+<path d="M540 392h660" stroke="#87aab8" stroke-opacity=".25" stroke-width="5"/>
+<g stroke="#70e6d8" fill="none"><path d="M170 534Q268 560 371 526" stroke-width="2.5" stroke-dasharray="10 8"/><path d="M810 584Q904 569 1008 548" stroke-width="2.5" stroke-dasharray="10 8"/></g>
+<g fill="#283f42"><rect x="532" y="369" width="92" height="65" rx="4"/><rect x="450" y="403" width="72" height="50" rx="4"/></g>
+<g fill="#47735f"><circle cx="563" cy="360" r="52"/><circle cx="480" cy="388" r="34"/></g>
+<g stroke="#e7c58d" stroke-width="8" stroke-linecap="round" opacity=".6"><path d="M577 360V268"/><path d="M904 344V239"/></g><g fill="#fff3d3" opacity=".9"><ellipse cx="577" cy="267" rx="30" ry="7"/><ellipse cx="904" cy="237" rx="31" ry="7"/></g>
+<g transform="translate(198 565) scale(1.45)">
+ <ellipse cx="0" cy="6" rx="34" ry="10" fill="#03101c" opacity=".44" filter="url(#shadow)"/>
+ <g stroke="#253648" stroke-width="2">
+ <path d="M-9 -54L-21 1" stroke="#b9b2a7" stroke-width="19" stroke-linecap="round"/><path d="M13 -54L23 1" stroke="#b9b2a7" stroke-width="19" stroke-linecap="round"/>
+ <path d="M-24 -2l-11 3M19 2l12 4" stroke="#182636" stroke-width="11" stroke-linecap="round"/>
+ <path d="M-13 -117Q0 -123 14 -117L25 -57Q0 -46 -25 -58Z" fill="#4c6a83"/>
+ <path d="M-18 -108L-30 -59M18 -108L34 -69" fill="none" stroke="#4c6a83" stroke-width="13" stroke-linecap="round"/>
+ <path d="M-28 -59l-4 12M32 -69l5 11" stroke="#bba48b" stroke-width="9" stroke-linecap="round"/>
+ <circle cx="0" cy="-132" r="16" fill="#bea58f"/><path d="M-17 -133Q-17 -155 1 -150Q17 -153 18 -132Q8 -143 -4 -138Z" fill="#27303b"/>
+ </g></g>
+ <g><rect x="147.3" y="357.6" width="101.5" height="229.1" rx="3" fill="#53e8d7" fill-opacity=".04" stroke="#6cffea" stroke-width="2.5" filter="url(#glow)"/>
+ <rect x="147.3" y="325.6" width="159.5" height="27" rx="7" fill="#071c2b" fill-opacity=".94" stroke="#5ed8c9"/>
+ <text x="157.3" y="344.6" fill="#e5ffff" font-family="Arial,sans-serif" font-size="13" font-weight="700">PERSON 01</text>
+ <circle cx="291.8" cy="338.6" r="4.5" fill="#70f4d7"/></g><g transform="translate(447 450) scale(0.93)">
+ <ellipse cx="0" cy="6" rx="34" ry="10" fill="#03101c" opacity=".44" filter="url(#shadow)"/>
+ <g stroke="#253648" stroke-width="2">
+ <path d="M-9 -54L-21 1" stroke="#3d4c5e" stroke-width="19" stroke-linecap="round"/><path d="M13 -54L23 1" stroke="#3d4c5e" stroke-width="19" stroke-linecap="round"/>
+ <path d="M-24 -2l-11 3M19 2l12 4" stroke="#182636" stroke-width="11" stroke-linecap="round"/>
+ <path d="M-13 -117Q0 -123 14 -117L25 -57Q0 -46 -25 -58Z" fill="#c8b8a9"/>
+ <path d="M-18 -108L-30 -59M18 -108L34 -69" fill="none" stroke="#c8b8a9" stroke-width="13" stroke-linecap="round"/>
+ <path d="M-28 -59l-4 12M32 -69l5 11" stroke="#bba48b" stroke-width="9" stroke-linecap="round"/>
+ <circle cx="0" cy="-132" r="16" fill="#bea58f"/><path d="M-17 -133Q-17 -155 1 -150Q17 -153 18 -132Q8 -143 -4 -138Z" fill="#27303b"/>
+ </g></g>
+ <g><rect x="414.4" y="317.0" width="65.1" height="146.9" rx="3" fill="#53e8d7" fill-opacity=".04" stroke="#6cffea" stroke-width="2.5" filter="url(#glow)"/>
+ <rect x="414.4" y="285.0" width="123.1" height="27" rx="7" fill="#071c2b" fill-opacity=".94" stroke="#5ed8c9"/>
+ <text x="424.4" y="304.0" fill="#e5ffff" font-family="Arial,sans-serif" font-size="13" font-weight="700">PERSON 02</text>
+ <circle cx="522.5" cy="298.0" r="4.5" fill="#70f4d7"/></g><g transform="translate(811 555) scale(1.12)">
+ <ellipse cx="0" cy="6" rx="34" ry="10" fill="#03101c" opacity=".44" filter="url(#shadow)"/>
+ <g stroke="#253648" stroke-width="2">
+ <path d="M-9 -54L-21 1" stroke="#263b56" stroke-width="19" stroke-linecap="round"/><path d="M13 -54L23 1" stroke="#263b56" stroke-width="19" stroke-linecap="round"/>
+ <path d="M-24 -2l-11 3M19 2l12 4" stroke="#182636" stroke-width="11" stroke-linecap="round"/>
+ <path d="M-13 -117Q0 -123 14 -117L25 -57Q0 -46 -25 -58Z" fill="#d6d8d4"/>
+ <path d="M-18 -108L-30 -59M18 -108L34 -69" fill="none" stroke="#d6d8d4" stroke-width="13" stroke-linecap="round"/>
+ <path d="M-28 -59l-4 12M32 -69l5 11" stroke="#bba48b" stroke-width="9" stroke-linecap="round"/>
+ <circle cx="0" cy="-132" r="16" fill="#bea58f"/><path d="M-17 -133Q-17 -155 1 -150Q17 -153 18 -132Q8 -143 -4 -138Z" fill="#27303b"/>
+ </g></g>
+ <g><rect x="771.8" y="394.8" width="78.4" height="177.0" rx="3" fill="#53e8d7" fill-opacity=".04" stroke="#6cffea" stroke-width="2.5" filter="url(#glow)"/>
+ <rect x="771.8" y="362.8" width="136.4" height="27" rx="7" fill="#071c2b" fill-opacity=".94" stroke="#5ed8c9"/>
+ <text x="781.8" y="381.8" fill="#e5ffff" font-family="Arial,sans-serif" font-size="13" font-weight="700">PERSON 03</text>
+ <circle cx="893.2" cy="375.8" r="4.5" fill="#70f4d7"/></g><g transform="translate(1097 426) scale(0.61)">
+ <ellipse cx="0" cy="6" rx="34" ry="10" fill="#03101c" opacity=".44" filter="url(#shadow)"/>
+ <g stroke="#253648" stroke-width="2">
+ <path d="M-9 -54L-21 1" stroke="#304052" stroke-width="19" stroke-linecap="round"/><path d="M13 -54L23 1" stroke="#304052" stroke-width="19" stroke-linecap="round"/>
+ <path d="M-24 -2l-11 3M19 2l12 4" stroke="#182636" stroke-width="11" stroke-linecap="round"/>
+ <path d="M-13 -117Q0 -123 14 -117L25 -57Q0 -46 -25 -58Z" fill="#485c69"/>
+ <path d="M-18 -108L-30 -59M18 -108L34 -69" fill="none" stroke="#485c69" stroke-width="13" stroke-linecap="round"/>
+ <path d="M-28 -59l-4 12M32 -69l5 11" stroke="#bba48b" stroke-width="9" stroke-linecap="round"/>
+ <circle cx="0" cy="-132" r="16" fill="#bea58f"/><path d="M-17 -133Q-17 -155 1 -150Q17 -153 18 -132Q8 -143 -4 -138Z" fill="#27303b"/>
+ </g></g>
+ <g><rect x="1075.7" y="338.8" width="42.7" height="96.4" rx="3" fill="#53e8d7" fill-opacity=".04" stroke="#6cffea" stroke-width="2.5" filter="url(#glow)"/>
+ <rect x="1075.7" y="306.8" width="100.7" height="27" rx="7" fill="#071c2b" fill-opacity=".94" stroke="#5ed8c9"/>
+ <text x="1085.7" y="325.8" fill="#e5ffff" font-family="Arial,sans-serif" font-size="13" font-weight="700">PERSON 04</text>
+ <circle cx="1161.4" cy="319.8" r="4.5" fill="#70f4d7"/></g>
+<g opacity=".83" transform="translate(198 581) scale(1.07)"><path d="M-65 13Q-4 30 73 1" fill="none" stroke="#5ff5db" stroke-width="3" stroke-dasharray="8 8"/><circle cx="-65" cy="13" r="4" fill="#86ffee"/><path d="M73 1l-12 -8v17Z" fill="#72f9e1"/></g><g opacity=".83" transform="translate(811 570) scale(1.05)"><path d="M-65 13Q-4 30 73 1" fill="none" stroke="#5ff5db" stroke-width="3" stroke-dasharray="8 8"/><circle cx="-65" cy="13" r="4" fill="#86ffee"/><path d="M73 1l-12 -8v17Z" fill="#72f9e1"/></g>
+<g><rect x="22" y="20" width="336" height="54" rx="14" fill="#07192b" fill-opacity=".9" stroke="#315c6e"/><path d="M40 38v18" stroke="#5ce5d5" stroke-width="4"/><text x="56" y="45" font-family="Arial,sans-serif" font-size="15" fill="#eaf7ff" font-weight="700">AI PERSON DETECTION</text><text x="56" y="61" font-family="Arial,sans-serif" font-size="11" fill="#90c3ce">COMMERCIAL PARKING AREA · VISUAL CONCEPT</text></g>
+<g transform="translate(866 18)"><rect width="313" height="77" rx="16" fill="url(#darkPanel)" stroke="#41969a" stroke-opacity=".8"/><g fill="none" stroke="#6ce7d5" stroke-width="2"><circle cx="30" cy="26" r="9"/><path d="M14 52c2-18 30-18 33 0"/></g><text x="62" y="27" fill="#a9cedc" font-size="12" font-family="Arial">DEMO OBJECTS</text><text x="62" y="54" fill="#60ead4" font-size="27" font-family="Arial" font-weight="700">04</text><path d="M164 14v49" stroke="#41697a"/><text x="181" y="29" font-size="11" fill="#a5c6d3" font-family="Arial">STATUS</text><text x="181" y="52" font-size="17" fill="#e7f9fb" font-family="Arial" font-weight="700">ILLUSTRATIVE</text></g>
+<rect x="20" y="617" width="472" height="37" rx="10" fill="#061b2b" fill-opacity=".94" stroke="#316476"/>
+<text x="37" y="642" fill="#c5f7f2" font-family="Arial" font-size="15">SIMULATED SCENE · NO LIVE VIDEO</text></svg>
