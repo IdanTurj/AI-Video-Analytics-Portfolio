@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="Illustration of an exterior building and security camera">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#23475a"/><stop offset="1" stop-color="#061829"/></linearGradient><linearGradient id="wall" x2="1" y2=".4"><stop stop-color="#648395"/><stop offset="1" stop-color="#2b4e62"/></linearGradient></defs>
+<rect width="960" height="600" fill="url(#bg)"/>
+<path d="M0 110 820 22 960 96V600H0Z" fill="url(#wall)"/>
+<g fill="#29495e" stroke="#95b7c2" stroke-opacity=".48" stroke-width="4">
+<rect x="90" y="150" width="195" height="150" rx="7"/><rect x="338" y="128" width="195" height="150" rx="7"/><rect x="585" y="102" width="195" height="150" rx="7"/>
+<rect x="95" y="353" width="195" height="160" rx="7"/><rect x="344" y="338" width="195" height="160" rx="7"/><rect x="590" y="318" width="195" height="160" rx="7"/>
+</g>
+<g transform="translate(625 128)"><rect x="-8" y="-14" width="40" height="44" rx="6" fill="#d6e4e4"/><path d="M24 5 85 -12" stroke="#d8e7e6" stroke-width="11" stroke-linecap="round"/><path d="M77 -36 182 -54 202 -15 100 6Z" fill="#e2eeee" stroke="#c1e0e0" stroke-width="5"/><path d="M202 -15 216 -2 190 4 182 -7Z" fill="#132d39"/><circle cx="202" cy="-4" r="8" fill="#56d6c9"/></g>
+<g stroke="#82f9db" stroke-width="3" fill="none" opacity=".68"><path d="M822 96q-85 60-185 107" stroke-dasharray="10 10"/><circle cx="619" cy="211" r="48"/></g>
+<rect x="24" y="26" width="255" height="38" rx="8" fill="#082736"/><text x="40" y="51" font-size="15" font-weight="700" fill="#afffe8" font-family="Arial">SECURITY CAMERA CONCEPT</text>
+<rect x="24" y="541" width="450" height="35" rx="8" fill="#0b2a39"/><text x="40" y="564" font-size="15" fill="#c5f8ed" font-family="Arial">Original illustration · no surveillance footage</text>
+</svg>
