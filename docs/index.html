@@ -61,6 +61,15 @@
     .gallery-note{font-size:11px;color:#a9d6d7;margin:11px 0 0}
     @media(max-width:660px){.feature-photo{height:190px}}
       .hero-panel{transform:none;overflow:hidden}.mock-view{min-height:290px}.mock-view:before{border-color:#5d9a9b30}.feature-photo{height:190px}.feature-photo img{object-position:center 48%}.camera-frame:before{background:linear-gradient(0deg,#071524c9 0%,transparent 35%)}.camera-frame .frame-caption{font-size:9px}.camera-frame:after{border-color:#81d3c633}.feature .symbol{margin-top:1px}
+
+    .detection-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+    .detection-gallery figure{padding:0;margin:0;border:1px solid #2b5669;overflow:hidden;border-radius:16px;background:#112438}
+    .detection-gallery figure.detection-lead{grid-column:span 2}
+    .detection-gallery img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;filter:none}
+    .detection-gallery figcaption{padding:13px 18px 16px;display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+    .detection-gallery figcaption strong{font-size:13px;color:#e8fbff}
+    .detection-gallery figcaption span{font-size:11px;color:#9ebfcf}
+    @media(max-width:660px){.detection-gallery{grid-template-columns:1fr}.detection-gallery figure.detection-lead{grid-column:auto}.detection-gallery figcaption{display:block}.detection-gallery figcaption span{display:block;margin-top:4px}}
   </style>
 </head>
 <body>
@@ -93,6 +102,17 @@
           </div>
           <div class="no-live"><span class="dot"></span> Preview has no camera, API, or authentication connection</div>
         </div>
+      </div>
+<div class="section detections-showcase" aria-label="Illustrative person detection scenes">
+        <div class="eyebrow">Computer vision portfolio</div>
+        <h2 class="section-heading">People detection across different environments.</h2>
+        <p class="section-intro">Three AI-generated scenes illustrate how detections and tracking indicators could be presented in a customer-facing application. These are not actual results of a running model.</p>
+        <div class="detection-gallery">
+          <figure class="detection-lead"><img src="assets/person-detection-parking.avif" alt="AI-generated cinematic person detection display at a commercial parking area, with bounding boxes and tracking paths" loading="lazy" width="640" height="360"><figcaption><strong>Commercial facility</strong><span>Illustrative people detection · No live camera</span></figcaption></figure>
+          <figure><img src="assets/person-detection-warehouse.avif" alt="AI-generated person detection illustration at a logistics facility with multiple labeled people" loading="lazy" width="640" height="360"><figcaption><strong>Logistics and operations</strong><span>Synthetic detection overlay</span></figcaption></figure>
+          <figure><img src="assets/person-detection-lobby.avif" alt="AI-generated person detection illustration in a secure office lobby" loading="lazy" width="640" height="360"><figcaption><strong>Indoor access areas</strong><span>Synthetic detection overlay</span></figcaption></figure>
+        </div>
+        <p class="gallery-note">Images and confidence percentages are generated examples for design demonstration; no real footage, identities, model predictions or measured accuracy are shown.</p>
       </div>
       <div class="section">
         <div class="eyebrow">Product capabilities</div><h2 class="section-heading">Built around events, sites, and access.</h2>
