@@ -38,7 +38,29 @@
     @media(max-width:960px){.hero{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}.workflow{grid-template-columns:1fr}.workspace{grid-template-columns:155px minmax(0,1fr)}.sidebar{padding:18px 9px}.content{padding:18px}}
     @media(max-width:660px){.wrap{padding:0 15px}.top-inner{flex-direction:column;align-items:stretch;padding:14px 0}.nav{justify-content:center}.nav button{flex:1;padding:9px 7px;font-size:11px}.hero{padding:44px 0}.features,.tech-grid,.camera-grid{grid-template-columns:1fr}.visual-grid{grid-template-columns:1fr}.stats-stack{grid-template-columns:repeat(2,1fr)}.hero-panel{transform:none}.portal-intro{align-items:flex-start;flex-direction:column}.workspace{display:block}.sidebar{border-right:0;border-bottom:1px solid #2e445c;padding:13px}.side-brand,.side-label,.side-bottom{display:none}.side-nav{display:flex;overflow-x:auto}.side-nav button{flex-shrink:0}.workspace-title{align-items:stretch;flex-direction:column}.site-select{max-width:none}.metric-grid{grid-template-columns:1fr 1fr}.metric:last-child{grid-column:span 2}h1{font-size:36px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button:hover{transform:none}}
-  </style>
+
+    /* Illustrative photography: no real customer camera data is shown. */
+    .mock-view{isolation:isolate}
+    .mock-view .scene-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.7) saturate(.77)}
+    .mock-view:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#071321b8,transparent 50%);z-index:1;pointer-events:none}
+    .mock-view:before{z-index:2}
+    .mock-view .floating-label{z-index:3;background:#071b26de;border:1px solid #44cbbb;border-radius:6px;padding:5px 7px}
+    .mock-view .feed-text{z-index:3;font-weight:650;font-size:10px;color:#e2fff8;max-width:90%}
+    .ui-demo-box{position:absolute;border:2px solid #74e5d7;border-radius:4px;box-shadow:0 0 16px #49e5d53b;z-index:2;pointer-events:none}
+    .ui-demo-box.one{left:19%;top:26%;width:24%;height:34%}
+    .ui-demo-box.two{right:13%;top:39%;width:22%;height:31%}
+    .feature-photo{height:134px;margin:-26px -26px 20px;overflow:hidden;border-radius:17px 17px 0 0;background:#172c3c}
+    .feature-photo img{display:block;width:100%;height:100%;object-fit:cover;filter:brightness(.82) saturate(.78)}
+    .camera-frame{isolation:isolate;overflow:hidden}
+    .camera-frame img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;filter:brightness(.62) saturate(.66)}
+    .camera-frame:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#06121ce3 1%,transparent 60%);z-index:1;pointer-events:none}
+    .camera-frame:after{z-index:2}
+    .frame-caption{position:absolute;left:13px;bottom:13px;right:12px;z-index:3;color:#e0f5f7;font-size:10px;letter-spacing:.01em;font-weight:700;text-shadow:0 1px 3px #04131c}
+    .frame-badge{position:absolute;left:13px;top:12px;z-index:3;background:#103645df;border:1px solid #3a9c9b;color:#a7ffeb;border-radius:6px;font-size:9px;font-weight:850;padding:5px 7px}
+    .camera .status{color:#8fc9e0}
+    .gallery-note{font-size:11px;color:#a9d6d7;margin:11px 0 0}
+    @media(max-width:660px){.feature-photo{height:165px}}
+    </style>
 </head>
 <body>
   <header class="top"><div class="wrap top-inner">
@@ -62,9 +84,9 @@
         <div class="hero-panel" role="img" aria-label="Stylized non-functional video analytics product preview with no video feed">
           <header><strong>Site monitoring overview</strong><span class="dots"><i></i><i></i><i></i></span></header>
           <div class="visual-grid">
-            <div class="mock-view"><span class="floating-label">VIDEO PLACEHOLDER</span>
-              <svg width="92" height="80" viewBox="0 0 92 80" fill="none" aria-hidden="true"><rect x="10" y="12" width="66" height="47" rx="10" stroke="#75cbbf" stroke-width="2"/><path d="M76 28L88 23V48L76 43M33 66H56M45 59V66" stroke="#75cbbf" stroke-width="2" stroke-linecap="round"/><path d="M22 48L35 35L45 44L57 28L66 39" stroke="#75cbbf" stroke-width="2" opacity=".65"/></svg>
-              <span class="feed-text">No footage included in public portfolio</span>
+            <div class="mock-view"><img class="scene-photo" alt="Illustrative stock photo of parked vehicles; not a camera feed" src="https://images.unsplash.com/photo-1770319942638-a5989632f2ad?auto=format&fit=crop&w=1200&q=78" loading="eager" referrerpolicy="no-referrer"><span class="floating-label">ILLUSTRATIVE SCENE</span>
+              <i class="ui-demo-box one" aria-hidden="true"></i><i class="ui-demo-box two" aria-hidden="true"></i>
+              <span class="feed-text">Concept overlay only · No camera or AI inference connection</span>
             </div>
             <div class="stats-stack">
               <div class="tiny-card"><small>Managed sites</small><strong>02</strong><span class="sample">Sample interface data</span></div>
@@ -78,10 +100,10 @@
         <div class="eyebrow">Product capabilities</div><h2 class="section-heading">Built around events, sites, and access.</h2>
         <p class="section-intro">This safe public demonstration communicates the workflows of a privately developed AI video analytics application. Its production implementation is not published here.</p>
         <div class="features">
-          <article class="feature"><span class="symbol">◎</span><b>Event-driven monitoring</b><p>Security rules such as tripwires, restricted areas, and scheduled monitoring help surface incidents for review.</p></article>
-          <article class="feature"><span class="symbol">⌘</span><b>Customer-centered workspace</b><p>Organized access to camera lists, incidents, site context, permissions, and account settings.</p></article>
-          <article class="feature"><span class="symbol">▣</span><b>Evidence and review</b><p>Incident metadata and associated evidence help users understand alerts without scanning continuous footage.</p></article>
-        </div>
+          <article class="feature"><div class="feature-photo"><img src="https://images.unsplash.com/photo-1773132500025-4465e723a1ab?auto=format&fit=crop&w=900&q=78" alt="Illustrative photograph of a CCTV camera on a building, not a product photo" loading="lazy"></div><span class="symbol">◎</span><b>Event-driven monitoring</b><p>Security rules such as tripwires, restricted areas, and scheduled monitoring help surface incidents for review.</p></article>
+          <article class="feature"><div class="feature-photo"><img src="https://images.unsplash.com/photo-1758304481447-fd91f8995e1e?auto=format&fit=crop&w=1200&q=78" alt="Illustrative aerial photograph of buildings and site layout" loading="lazy"></div><span class="symbol">⌘</span><b>Customer-centered workspace</b><p>Organized access to camera lists, incidents, site context, permissions, and account settings.</p></article>
+          <article class="feature"><div class="feature-photo"><img src="https://images.unsplash.com/photo-1770319942638-a5989632f2ad?auto=format&fit=crop&w=1200&q=78" alt="Illustrative photograph of parked vehicles, not incident evidence" loading="lazy"></div><span class="symbol">▣</span><b>Evidence and review</b><p>Incident metadata and associated evidence help users understand alerts without scanning continuous footage.</p></article>
+        </div><p class="gallery-note">All photography on this page is illustrative stock imagery, not live customer footage or AI detection results.</p>
       </div>
       <div class="section">
         <div class="eyebrow">User journey</div><h2 class="section-heading">From setup to response.</h2>
@@ -118,16 +140,16 @@
             <div class="metric"><span>Selected site</span><b id="metricSite">A</b><small>Synthetic location</small></div>
           </div>
           <div id="panel-overview">
-            <div class="subhead"><h3>Camera overview</h3><small>Images deliberately removed</small></div><div class="camera-grid" id="overviewCameras"></div>
+            <div class="subhead"><h3>Camera overview</h3><small>Illustrative still photos · No video feeds</small></div><div class="camera-grid" id="overviewCameras"></div>
             <div class="subhead"><h3>Recent incidents</h3><small>Illustrative alerts</small></div><div class="events" id="overviewEvents"></div>
           </div>
           <div id="panel-cameras" class="hidden">
-            <div class="subhead"><h3>Site cameras</h3><small>Camera cards show layout only</small></div><div class="camera-grid" id="allCameras"></div>
-            <div class="note-card">The actual product connects only to authorized IP cameras. This portfolio site has no video player, live endpoint, or stored footage.</div>
+            <div class="subhead"><h3>Site cameras</h3><small>Sample images · UI preview only</small></div><div class="camera-grid" id="allCameras"></div>
+            <div class="note-card">Photos shown in these camera tiles are licensed illustrative stock images, not real security camera footage. This portfolio site has no video player, live endpoint, or stored footage.</div>
           </div>
           <div id="panel-incidents" class="hidden">
             <div class="subhead"><h3>Incident center</h3><small>Static examples of an event history</small></div><div class="events" id="allEvents"></div>
-            <div class="note-card">The full application supports event handling and saved evidence. No real snapshots, clips, identities, or customer information are included in this demo.</div>
+            <div class="note-card">The full application supports event handling and saved evidence. No real snapshots, clips, identities, or customer information are included in this demo. Photos in camera cards are illustrative stock images, not actual incident evidence.</div>
           </div>
           <div id="panel-permissions" class="hidden">
             <div class="subhead"><h3>Role-based access</h3><small>Design illustration — not real authentication</small></div>
@@ -150,7 +172,7 @@
         <article class="tech-card"><h3>Customer-facing UI</h3><p>Browser interfaces for site overview, camera management, incident review, permissions, and request workflows.</p><div class="pills"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Responsive UI</span></div></article>
         <article class="tech-card"><h3>AI-assisted development</h3><p>Structured Claude Code subagent workflows with specialized responsibilities and coordinated engineering tasks across a shared codebase.</p><div class="pills"><span>Claude Code</span><span>Multi-agent orchestration</span><span>Git</span><span>PowerShell</span></div></article>
       </div>
-      <div class="disclaimer"><strong>Privacy and scope:</strong> This website does not implement actual camera connectivity, computer vision inference, customer authentication, database access, AI-agent execution, or production security controls. The visualized values are examples. Private implementation code is not included.</div>
+      <div class="disclaimer"><strong>Privacy and scope:</strong> This website does not implement actual camera connectivity, computer vision inference, customer authentication, database access, AI-agent execution, or production security controls. The visualized values and all photo overlays are illustrative. Stock photos are not actual camera output or model predictions. Private implementation code is not included.</div>
     </section>
   </main>
   <footer><div class="wrap"><span>Independent development portfolio · Idan Turjeman</span><span>Public-safe UI demonstration · No customer or camera data</span></div></footer>
@@ -166,7 +188,8 @@
       document.querySelectorAll('[data-view]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();showView(b.getAttribute('data-view'));});});
       var sites={alpha:{code:'A',cameras:['Entrance','North Perimeter','Loading Zone','Office Exterior'],events:[['Restricted-area event','Example · 09:42','amber','Review'],['After-hours activity','Example · 08:15','blue','Info'],['Camera health update','Example · Yesterday','', 'Resolved']]},beta:{code:'B',cameras:['Gate','Storage Exterior'],events:[['Tripwire event','Example · 11:20','amber','Review'],['Camera health update','Example · Yesterday','', 'Resolved']]}};
       var cameraIcon='<svg width="51" height="42" viewBox="0 0 51 42" fill="none" aria-hidden="true"><rect x="4" y="7" width="36" height="27" rx="5" stroke="#8cbdca" stroke-width="2"/><path d="M40 15L48 11V29L40 25" stroke="#8cbdca" stroke-width="2"/><path d="M17 19h10M22 14v10" stroke="#8cbdca" stroke-width="1.5"/></svg>';
-      function cameraHtml(name){return '<div class="camera"><div class="camera-frame"><div class="camera-placeholder">'+cameraIcon+'<b>Camera view withheld</b><small>No video or image data in portfolio</small></div></div><div class="camera-meta"><strong>'+name+'</strong><span class="status">Demo camera</span></div></div>';}
+      var demoPhotos=["https://images.unsplash.com/photo-1770319942638-a5989632f2ad?auto=format&fit=crop&w=1200&q=78","https://images.unsplash.com/photo-1758304481447-fd91f8995e1e?auto=format&fit=crop&w=1200&q=78","https://images.unsplash.com/photo-1773132500025-4465e723a1ab?auto=format&fit=crop&w=900&q=78"];
+      function cameraHtml(name,index){var photo=demoPhotos[index%demoPhotos.length];return '<div class="camera"><div class="camera-frame"><img src="'+photo+'" alt="Illustrative stock photo for '+name+' card; not security footage" loading="lazy"><span class="frame-badge">STATIC EXAMPLE</span><span class="frame-caption">No live connection · Illustrative imagery</span></div><div class="camera-meta"><strong>'+name+'</strong><span class="status">Demo camera</span></div></div>';}
       function eventHtml(row){return '<div class="event"><div><b>'+row[0]+'</b><small>'+row[1]+'</small></div><span class="chip '+row[2]+'">'+row[3]+'</span></div>';}
       function refresh(){var d=sites[document.getElementById('siteSelect').value];document.getElementById('metricCameras').textContent=String(d.cameras.length).padStart(2,'0');document.getElementById('metricIncidents').textContent=String(d.events.length).padStart(2,'0');document.getElementById('metricSite').textContent=d.code;document.getElementById('overviewCameras').innerHTML=d.cameras.slice(0,2).map(cameraHtml).join('');document.getElementById('allCameras').innerHTML=d.cameras.map(cameraHtml).join('');document.getElementById('overviewEvents').innerHTML=d.events.slice(0,2).map(eventHtml).join('');document.getElementById('allEvents').innerHTML=d.events.map(eventHtml).join('');}
       document.getElementById('siteSelect').addEventListener('change',refresh);refresh();
