@@ -41,7 +41,7 @@
 
     /* Original illustrationy: no real customer camera data is shown. */
     .mock-view{isolation:isolate}
-    .mock-view .scene-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.7) saturate(.77)}
+    .mock-view .scene-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.98) saturate(1.04)}
     .mock-view:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#071321b8,transparent 50%);z-index:1;pointer-events:none}
     .mock-view:before{z-index:2}
     .mock-view .floating-label{z-index:3;background:#071b26de;border:1px solid #44cbbb;border-radius:6px;padding:5px 7px}
@@ -50,9 +50,9 @@
     .ui-demo-box.one{left:19%;top:26%;width:24%;height:34%}
     .ui-demo-box.two{right:13%;top:39%;width:22%;height:31%}
     .feature-photo{height:134px;margin:-26px -26px 20px;overflow:hidden;border-radius:17px 17px 0 0;background:#172c3c}
-    .feature-photo img{display:block;width:100%;height:100%;object-fit:cover;filter:brightness(.82) saturate(.78)}
+    .feature-photo img{display:block;width:100%;height:100%;object-fit:cover;filter:brightness(.93) saturate(1.06)}
     .camera-frame{isolation:isolate;overflow:hidden}
-    .camera-frame img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;filter:brightness(.62) saturate(.66)}
+    .camera-frame img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;filter:brightness(.94) saturate(1.04)}
     .camera-frame:before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#06121ce3 1%,transparent 60%);z-index:1;pointer-events:none}
     .camera-frame:after{z-index:2}
     .frame-caption{position:absolute;left:13px;bottom:13px;right:12px;z-index:3;color:#e0f5f7;font-size:10px;letter-spacing:.01em;font-weight:700;text-shadow:0 1px 3px #04131c}
@@ -60,7 +60,8 @@
     .camera .status{color:#8fc9e0}
     .gallery-note{font-size:11px;color:#a9d6d7;margin:11px 0 0}
     @media(max-width:660px){.feature-photo{height:165px}}
-    </style>
+      .hero-panel{transform:none;overflow:hidden}.mock-view{min-height:265px}.mock-view:before{border-color:#5d9a9b30}.feature-photo{height:165px}.feature-photo img{object-position:center 48%}.camera-frame:before{background:linear-gradient(0deg,#071524c9 0%,transparent 35%)}.camera-frame .frame-caption{font-size:9px}.camera-frame:after{border-color:#81d3c633}.feature .symbol{margin-top:1px}
+  </style>
 </head>
 <body>
   <header class="top"><div class="wrap top-inner">
@@ -78,20 +79,17 @@
         <div>
           <div class="eyebrow">AI-powered video analytics · Product experience</div>
           <h1>See what matters.<br><em>Review what happened.</em></h1>
-          <p>A concept-to-interface demonstration of a software platform that helps organizations turn video events into actionable incident information, using their existing compatible cameras.</p>
+          <p>A portfolio demonstration of video analytics, person detection, and customer-facing security workflows, built around authorized existing camera systems.</p>
           <div class="actions"><button type="button" class="button primary" data-view="portal">Explore the client portal</button><button type="button" class="button" data-view="engineering">Explore the engineering</button></div>
         </div>
         <div class="hero-panel" role="img" aria-label="Stylized non-functional video analytics product preview with no video feed">
           <header><strong>Site monitoring overview</strong><span class="dots"><i></i><i></i><i></i></span></header>
           <div class="visual-grid">
-            <div class="mock-view"><img class="scene-photo" alt="Original illustration of parked vehicles; not a camera feed" src="assets/lot.svg" loading="eager" referrerpolicy="no-referrer"><span class="floating-label">ILLUSTRATIVE SCENE</span>
-              <i class="ui-demo-box one" aria-hidden="true"></i><i class="ui-demo-box two" aria-hidden="true"></i>
-              <span class="feed-text">Concept overlay only · No camera or AI inference connection</span>
+            <div class="mock-view"><img class="scene-photo" alt="Original illustration of parked vehicles; not a camera feed" src="assets/people-detection-parking.svg" loading="eager" referrerpolicy="no-referrer"><span class="floating-label">PERSON DETECTION · UI CONCEPT</span>
+              
+              <span class="feed-text">Synthetic people & overlays · No live inference</span>
             </div>
-            <div class="stats-stack">
-              <div class="tiny-card"><small>Managed sites</small><strong>02</strong><span class="sample">Sample interface data</span></div>
-              <div class="tiny-card"><small>Incident review</small><strong>03</strong><span class="sample">Example events only</span></div>
-            </div>
+            <div class="stats-stack"><div class="tiny-card"><small>People detection</small><strong>AI</strong><span class="sample">Visual explanation only</span></div><div class="tiny-card"><small>Monitoring rules</small><strong>24/7</strong><span class="sample">Illustrative workflow</span></div></div>
           </div>
           <div class="no-live"><span class="dot"></span> Preview has no camera, API, or authentication connection</div>
         </div>
@@ -100,10 +98,10 @@
         <div class="eyebrow">Product capabilities</div><h2 class="section-heading">Built around events, sites, and access.</h2>
         <p class="section-intro">This safe public demonstration communicates the workflows of a privately developed AI video analytics application. Its production implementation is not published here.</p>
         <div class="features">
-          <article class="feature"><div class="feature-photo"><img src="assets/camera.svg" alt="Original illustration of a CCTV camera on a building, not a product photo" loading="lazy"></div><span class="symbol">◎</span><b>Event-driven monitoring</b><p>Security rules such as tripwires, restricted areas, and scheduled monitoring help surface incidents for review.</p></article>
-          <article class="feature"><div class="feature-photo"><img src="assets/site.svg" alt="Original illustration of buildings and site layout" loading="lazy"></div><span class="symbol">⌘</span><b>Customer-centered workspace</b><p>Organized access to camera lists, incidents, site context, permissions, and account settings.</p></article>
-          <article class="feature"><div class="feature-photo"><img src="assets/lot.svg" alt="Original illustration of parked vehicles, not incident evidence" loading="lazy"></div><span class="symbol">▣</span><b>Evidence and review</b><p>Incident metadata and associated evidence help users understand alerts without scanning continuous footage.</p></article>
-        </div><p class="gallery-note">All visuals on this page are original illustrations, not live customer footage or AI detection results.</p>
+          <article class="feature"><div class="feature-photo"><img src="assets/people-detection-parking.svg" alt="Synthetic illustration of people detected near a commercial parking facility" loading="lazy"></div><span class="symbol">◎</span><b>Event-driven monitoring</b><p>Security rules such as tripwires, restricted areas, and scheduled monitoring help surface incidents for review.</p></article>
+          <article class="feature"><div class="feature-photo"><img src="assets/people-detection-lobby.svg" alt="Synthetic person-detection illustration in an office lobby" loading="lazy"></div><span class="symbol">⌘</span><b>Customer-centered workspace</b><p>Organized access to camera lists, incidents, site context, permissions, and account settings.</p></article>
+          <article class="feature"><div class="feature-photo"><img src="assets/people-detection-warehouse.svg" alt="Synthetic person-detection illustration in a logistics facility" loading="lazy"></div><span class="symbol">▣</span><b>Evidence and review</b><p>Incident metadata and associated evidence help users understand alerts without scanning continuous footage.</p></article>
+        </div><p class="gallery-note">All illustrated detections, bounding boxes, labels and values are synthetic examples, not actual model predictions or customer footage.</p>
       </div>
       <div class="section">
         <div class="eyebrow">User journey</div><h2 class="section-heading">From setup to response.</h2>
@@ -145,7 +143,7 @@
           </div>
           <div id="panel-cameras" class="hidden">
             <div class="subhead"><h3>Site cameras</h3><small>Illustrations · UI preview only</small></div><div class="camera-grid" id="allCameras"></div>
-            <div class="note-card">Photos shown in these camera tiles are licensed original illustrative graphics, not real security camera footage. This portfolio site has no video player, live endpoint, or stored footage.</div>
+            <div class="note-card">Visuals shown in these camera tiles are synthetic illustrations, not real security camera footage. This portfolio site has no video player, live endpoint, or stored footage.</div>
           </div>
           <div id="panel-incidents" class="hidden">
             <div class="subhead"><h3>Incident center</h3><small>Static examples of an event history</small></div><div class="events" id="allEvents"></div>
@@ -188,8 +186,8 @@
       document.querySelectorAll('[data-view]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();showView(b.getAttribute('data-view'));});});
       var sites={alpha:{code:'A',cameras:['Entrance','North Perimeter','Loading Zone','Office Exterior'],events:[['Restricted-area event','Example · 09:42','amber','Review'],['After-hours activity','Example · 08:15','blue','Info'],['Camera health update','Example · Yesterday','', 'Resolved']]},beta:{code:'B',cameras:['Gate','Storage Exterior'],events:[['Tripwire event','Example · 11:20','amber','Review'],['Camera health update','Example · Yesterday','', 'Resolved']]}};
       var cameraIcon='<svg width="51" height="42" viewBox="0 0 51 42" fill="none" aria-hidden="true"><rect x="4" y="7" width="36" height="27" rx="5" stroke="#8cbdca" stroke-width="2"/><path d="M40 15L48 11V29L40 25" stroke="#8cbdca" stroke-width="2"/><path d="M17 19h10M22 14v10" stroke="#8cbdca" stroke-width="1.5"/></svg>';
-      var demoPhotos=["assets/lot.svg","assets/site.svg","assets/camera.svg"];
-      function cameraHtml(name,index){var photo=demoPhotos[index%demoPhotos.length];return '<div class="camera"><div class="camera-frame"><img src="'+photo+'" alt="Original illustration for '+name+' card; not security footage" loading="lazy"><span class="frame-badge">STATIC EXAMPLE</span><span class="frame-caption">No live connection · Illustrative imagery</span></div><div class="camera-meta"><strong>'+name+'</strong><span class="status">Demo camera</span></div></div>';}
+      var demoPhotos=["assets/people-detection-parking.svg","assets/people-detection-warehouse.svg","assets/people-detection-lobby.svg"];
+      function cameraHtml(name,index){var photo=demoPhotos[index%demoPhotos.length];return '<div class="camera"><div class="camera-frame"><img src="'+photo+'" alt="Synthetic illustration of people detection for '+name+' card; not camera footage" loading="lazy"><span class="frame-badge">STATIC EXAMPLE</span><span class="frame-caption">No live connection · Illustrative imagery</span></div><div class="camera-meta"><strong>'+name+'</strong><span class="status">Demo camera</span></div></div>';}
       function eventHtml(row){return '<div class="event"><div><b>'+row[0]+'</b><small>'+row[1]+'</small></div><span class="chip '+row[2]+'">'+row[3]+'</span></div>';}
       function refresh(){var d=sites[document.getElementById('siteSelect').value];document.getElementById('metricCameras').textContent=String(d.cameras.length).padStart(2,'0');document.getElementById('metricIncidents').textContent=String(d.events.length).padStart(2,'0');document.getElementById('metricSite').textContent=d.code;document.getElementById('overviewCameras').innerHTML=d.cameras.slice(0,2).map(cameraHtml).join('');document.getElementById('allCameras').innerHTML=d.cameras.map(cameraHtml).join('');document.getElementById('overviewEvents').innerHTML=d.events.slice(0,2).map(eventHtml).join('');document.getElementById('allEvents').innerHTML=d.events.map(eventHtml).join('');}
       document.getElementById('siteSelect').addEventListener('change',refresh);refresh();
