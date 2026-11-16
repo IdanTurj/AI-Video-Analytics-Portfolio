@@ -16,7 +16,7 @@ A **privacy-safe frontend portfolio demo** of an independently developed AI-powe
 2. **Customer workspace concept** — a responsive customer dashboard with site selection, camera placeholders, sample incidents, and permissions views.
 3. **Engineering notes** — a high-level explanation of the independently developed application's software stack and its private implementation.
 
-The static demo has navigable tabs and UI interactions. It **does not** show real footage, access camera feeds, authenticate customers, connect to a server, or execute AI inference. All customer and event data are synthetic.
+The static demo has navigable tabs and UI interactions. It includes three original **synthetic person-detection illustrations** (parking area, warehouse, and office lobby) to explain the UI concept. Bounding boxes, object counts, and any tracking annotations are **visual mockups—not real predictions, measured accuracy, or customer footage**. It **does not** access camera feeds, authenticate customers, connect to a server, or execute AI inference. All customer and event data are synthetic.
 
 ## Engineering background: private application
 
